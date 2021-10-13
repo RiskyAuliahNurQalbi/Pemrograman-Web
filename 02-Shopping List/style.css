@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #b4849b, #64e0b0);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+header {
+    font-size: 0.6cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
+
+#home {
+    padding: 10px;
+}
+header,
+form {
+    min-height: 3cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5cm;
+    font-size: 0.5cm;
+    border: none;
+    background: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form button {
+    color: #fda085;
+    background: white;
+    cursor: pointer;
+    transition:all 0.5s ease;
+}
+
+form button:hover{
+    background: #fda085;
+    color: white;
+}
+
+.shopping-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-list {
+    min-width: 12cm;
+    list-style: none;
+}
+
+.shopping {
+    margin: 0.1cm;
+    background: white;
+    color: rgb(128, 123, 123);
+    font-size: 0.5cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.shopping li {
+    flex: 1;
+}
+.trash-btn, .complete-btn {
+    background:#ff6b42;
+    color: white;
+    border: none;
+    padding: 0.5cm;
+    cursor: pointer;
+}
+ .complete-btn{
+     background: rgb(90, 170, 108);
+}
+.shopping-item {
+    padding: 0cm 0.1cm;
+}
+
+.fa-trash, fa-check {
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color:#ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 15cm;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    background: white;
+    color:#fda085;
+}
+
+section {
+    padding: 20px 0;
+  }
+  
